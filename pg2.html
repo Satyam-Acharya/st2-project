@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            window.addEventListener('load',()=>{
+                var res=JSON.parse(localStorage.getItem("data"));
+                var li=[res.name.firstName,res.name.lastname,
+                        res.dob.day,res.dob.month,res.dob.year,
+                        res.email,
+                        res.phone,
+                        res.gender,
+                        res.address,
+                        res.city,
+                        res.pincode,
+                        res.state,
+                        res.country,
+                        res.hobbies,
+                        res.qualifications.classX,res.qualifications.classXII,res.qualifications.graduation,res.qualifications.masters,
+                        res.applied,
+                    ]
+                for(i=0;i<17;i++){
+                    document.write(li[i]+"<br>")
+                }
+                })
+                
+        </script>
+
+    </body>
+</html>
